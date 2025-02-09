@@ -1,121 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wildfire Relief - Rebuilt</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-white">
-
+  </head>
+  <body class="bg-gray-900 text-white">
     <!-- Navigation -->
-    <nav class="flex justify-between items-center px-12 py-6 bg-[#231F20] text-white">
-        <h1 class="text-3xl font-bold uppercase tracking-widest">Rebuilt</h1>
-        <ul class="flex space-x-10 text-lg uppercase">
-            <li><a href="#" class="hover:text-gray-400">Our Work</a></li>
-            <li><a href="#" class="hover:text-gray-400">Resources</a></li>
-            <li><a href="#" class="hover:text-gray-400">Get Involved</a></li>
-            <li><a href="#" class="font-semibold border-b-2 border-[#00FFFF] text-[#00FFFF] hover:text-[#00CCCC]">Donate</a></li>
-
-
-        </ul>
+    <nav
+      class="flex justify-between items-center px-12 py-6 bg-[#231F20] text-white"
+    >
+      <h1 class="text-3xl font-bold uppercase tracking-widest">Rebuilt</h1>
+      <ul class="flex space-x-10 text-lg uppercase">
+        <li><a href="about-us.html" class="hover:text-gray-400">ABOUT US</a></li>
+        <li><a href="#" class="hover:text-gray-400">Resources</a></li>
+        <li><a href="aid.html" class="hover:text-gray-400">Apply</a></li>
+        <li>
+          <a
+            href="donation.html"
+            class="font-semibold border-b-2 border-[#00FFFF] text-[#00FFFF] hover:text-[#00CCCC]"
+            >Donate</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative flex flex-col items-center justify-center text-center h-[70vh] bg-cover bg-center"
-        style="background-image: url('assets/hero-bg-image.png');">
-        
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <section
+    class="relative flex items-center justify-center text-center h-[70vh] bg-cover bg-center px-12"
+    style="background-image: url('assets/hero-bg-image.png')"
+>
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
-        <div class="relative z-10 max-w-2xl px-6">
+    <div class="relative z-10 flex justify-between items-center max-w-5xl w-full">
+        <!-- Left Side (H1 + P) -->
+        <div class="text-left max-w-lg">
             <h1 class="text-6xl font-extrabold uppercase">Wildfire Relief</h1>
-            <p class="mt-6 text-lg font-light leading-relaxed">
-                Helping wildfire victims recover by leveraging blockchain transparency and decentralized donations.
+            <p class="mt-4 text-lg font-light leading-relaxed">
+                Helping wildfire victims recover by leveraging blockchain transparency
+                and decentralized donations.
             </p>
-            <button class="mt-8 px-6 py-3 border-2 border-white text-white text-lg font-semibold uppercase 
-                hover:bg-white hover:text-black transition">Make a Difference</button>
         </div>
-    </section>
 
-     <!-- About Section -->
-     <section class="bg-white text-black py-20 px-12 text-center">
-        <p class="text-lg max-w-3xl mx-auto leading-relaxed">
-            We are helping California wildfire victims recover by using blockchain technology for fast, 
-            transparent, and verifiable aid. Every donation is securely tracked with Solana, ensuring direct 
-            support reaches those in need.
-        </p>
+        <!-- Right Side (Buttons) -->
+        <div class="flex flex-col gap-4">
+            <a href="donation.html"
+                class="px-8 py-3 border-2 border-white text-white text-lg font-semibold uppercase 
+                    hover:bg-white hover:text-black transition text-center">
+                Make a Difference
+            </a>
+            <a href="aid.html"
+                class="px-8 py-3 border-2 border-white text-white text-lg font-semibold uppercase 
+                    hover:bg-white hover:text-black transition text-center">
+                Apply
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section class="bg-white text-black py-20 px-12 text-center">
+      <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+        We are helping California wildfire victims recover by using blockchain
+        technology for fast, transparent, and verifiable aid. Every donation is
+        securely tracked with Solana, ensuring direct support reaches those in
+        need.
+      </p>
     </section>
 
     <!-- How It Works Section -->
     <section class="py-20 bg-gray-100 text-black text-center">
-        <h2 class="text-4xl font-bold">How <span class="text-red-600">Rebuilt</span> Ensures Secure & Transparent Aid</h2>
-        <p class="mt-4 text-lg max-w-3xl mx-auto leading-relaxed">
-            Rebuilt leverages Solana’s blockchain to ensure every donation is trackable, secure, and instantly verifiable.
-        </p>
+      <h2 class="text-4xl font-bold">
+        How <span class="text-red-600">Rebuilt</span> Ensures Secure &
+        Transparent Aid
+      </h2>
+      <p class="mt-4 text-lg max-w-3xl mx-auto leading-relaxed">
+        Rebuilt leverages Solana’s blockchain to ensure every donation is
+        trackable, secure, and instantly verifiable.
+      </p>
 
-        <!-- Process Section -->
-        <div class="flex justify-center items-center space-x-16 mt-12">
-            <div class="flex flex-col items-center">
-                <img src="assets/🦆 icon _donations_.png" class="w-16">
-                <p class="mt-2 text-xl font-semibold">Donate</p>
-                <p class="text-gray-600 text-sm max-w-xs">Users donate SOL through the NAME smart contract. Every transaction is recorded on the Solana blockchain.</p>
-            </div>
-            <div class="text-4xl font-bold text-gray-400">→</div>
-            <div class="flex flex-col items-center">
-                <img src="assets/🦆 icon _verify_.png" class="w-16">
-                <p class="mt-2 text-xl font-semibold">Verified</p>
-                <p class="text-gray-600 text-sm max-w-xs">The smart contract ensures donations are secure with no middleman taking a cut. Every donor can track where their funds go.</p>
-            </div>
-            <div class="text-4xl font-bold text-gray-400">→</div>
-            <div class="flex flex-col items-center">
-                <img src="assets/🦆 icon _heart handshake_.png" class="w-16">
-                <p class="mt-2 text-xl font-semibold">Relief</p>
-                <p class="text-gray-600 text-sm max-w-xs">Something about relief is described accurately and directly to those in need.</p>
-            </div>
+      <!-- Process Section -->
+      <div class="flex justify-center items-center space-x-16 mt-12">
+        <div class="flex flex-col items-center">
+          <img src="assets/🦆 icon _donations_.png" class="w-16" />
+          <p class="mt-2 text-xl font-semibold">Donate</p>
+          <p class="text-gray-600 text-sm max-w-xs">
+            Users donate SOL through the NAME smart contract. Every transaction
+            is recorded on the Solana blockchain.
+          </p>
         </div>
+        <div class="text-4xl font-bold text-gray-400">→</div>
+        <div class="flex flex-col items-center">
+          <img src="assets/🦆 icon _verify_.png" class="w-16" />
+          <p class="mt-2 text-xl font-semibold">Verified</p>
+          <p class="text-gray-600 text-sm max-w-xs">
+            The smart contract ensures donations are secure with no middleman
+            taking a cut. Every donor can track where their funds go.
+          </p>
+        </div>
+        <div class="text-4xl font-bold text-gray-400">→</div>
+        <div class="flex flex-col items-center">
+          <img src="assets/🦆 icon _heart handshake_.png" class="w-16" />
+          <p class="mt-2 text-xl font-semibold">Relief</p>
+          <p class="text-gray-600 text-sm max-w-xs">
+            Something about relief is described accurately and directly to those
+            in need.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- How We Are Making a Difference Section -->
     <section class="py-20 bg-red-50 text-black text-center">
-        <h2 class="text-4xl font-bold">How We Are Making a Difference</h2>
+      <h2 class="text-4xl font-bold">How We Are Making a Difference</h2>
 
-        <!-- Image Grid -->
-        <div class="grid grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
-            <img src="assets/Mask group.png" class="w-full h-[250px] object-cover rounded-lg shadow-lg">
-            <img src="assets/Mask group (1).png" class="w-full h-[250px] object-cover rounded-lg shadow-lg">
-            <img src="assets/Mask group (2).png" class="w-full h-[250px] object-cover rounded-lg shadow-lg">
+      <!-- Image Grid -->
+      <div class="grid grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
+        <img
+          src="assets/Mask group.png"
+          class="w-full h-[250px] object-cover rounded-lg shadow-lg"
+        />
+        <img
+          src="assets/Mask group (1).png"
+          class="w-full h-[250px] object-cover rounded-lg shadow-lg"
+        />
+        <img
+          src="assets/Mask group (2).png"
+          class="w-full h-[250px] object-cover rounded-lg shadow-lg"
+        />
+      </div>
+
+      <!-- Donation Stats -->
+      <div class="grid grid-cols-2 gap-x-20 mt-20 max-w-4xl mx-auto text-left">
+        <!-- Total Raised -->
+        <div class="flex flex-col items-center">
+          <img src="assets/🦆 icon _Environmental_.png" class="w-100 mb-2" />
+          <h3 class="text-5xl font-bold text-red-600">$240,065</h3>
+          <p class="text-lg font-semibold">Total Raised</p>
         </div>
 
-        <!-- Donation Stats -->
-        <div class="grid grid-cols-2 gap-x-20  mt-20 max-w-4xl mx-auto text-left">
-            <!-- Total Raised -->
-            <div class="flex flex-col items-center">
-                <img src="assets/🦆 icon _Environmental_.png" class="w-100 mb-2">
-                <h3 class="text-5xl font-bold text-red-600">$240,065</h3>
-                <p class="text-lg font-semibold">Total Raised</p>
-            </div>
-
-            <!-- Live Donations -->
-            <div class="border-l-4 border-gray-300 pl-6">
-                <h3 class="text-lg font-semibold text-gray-800">Live Donations</h3>
-                <div class="mt-4">
-                    <p class="text-gray-700">Jonah S. <span class="text-black font-bold">$500</span></p>
-                    <p class="text-xs text-gray-500">1 second ago</p>
-                </div>
-                <hr class="my-2 border-gray-300">
-                <div>
-                    <p class="text-gray-700">Arnav P. <span class="text-black font-bold">$75</span></p>
-                    <p class="text-xs text-gray-500">2 minutes ago</p>
-                </div>
-            </div>
+        <!-- Live Donations -->
+        <div class="border-l-4 border-gray-300 pl-6">
+          <h3 class="text-lg font-semibold text-gray-800">Live Donations</h3>
+          <div class="mt-4">
+            <p class="text-gray-700">
+              Hudson P. <span class="text-black font-bold">$500</span>
+            </p>
+            <p class="text-xs text-gray-500">1 second ago</p>
+          </div>
+          <hr class="my-2 border-gray-300" />
+          <div>
+            <p class="text-gray-700">
+              Arnav M. <span class="text-black font-bold">$75</span>
+            </p>
+            <p class="text-xs text-gray-500">2 minutes ago</p>
+          </div>
         </div>
+      </div>
 
-        <!-- Make a Difference Button -->
-        <div class="mt-12">
-            <button class="px-10 py-4 border-2 border-red-600 text-red-600 text-lg font-bold uppercase 
-                hover:bg-red-600 hover:text-white transition">Make a Difference</button>
-        </div>
+      <!-- Make a Difference Button -->
+      <div class="mt-12">
+        <a
+          href="donation.html"
+          class="mt-8 px-10 py-5 border-2 border-red-600 text-red-600 text-lg font-semibold uppercase hover:bg-red-600 hover:text-white transition inline-block text-center"
+        >
+          Make a Difference
+        </a>
+      </div>
     </section>
-
-</body>
+  </body>
 </html>
