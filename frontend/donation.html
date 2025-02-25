@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-red-50 flex flex-col items-center justify-center min-h-screen pt-20">
+
+    <!-- Navigation Bar (Now Fixed at Top) -->
+    <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-6 bg-[#231F20] text-white shadow-md z-50">
+      <h1 class="text-3xl font-bold uppercase tracking-widest">Rebuilt</h1>
+      <ul class="flex space-x-10 text-lg uppercase">
+        <li><a href="index.html" class="hover:text-gray-400">HOME</a></li>
+        <li><a href="about-us.html" class="hover:text-gray-400">ABOUT US</a></li>
+        <li><a href="aid.html" class="hover:text-gray-400">Apply</a></li>
+        <li>
+          <a
+            href="donation.html"
+            class="font-semibold border-b-2 border-[#00FFFF] text-[#00FFFF] hover:text-[#00CCCC]"
+            >Donate</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Donation Form -->
+    <form id="donation-form" class="flex flex-col justify-center bg-white p-8 rounded-lg shadow-lg max-w-lg w-full border border-red-300 mt-20">
+        <h2 class="text-2xl font-bold text-center text-red-600 mb-6">Donate to BlazeFund</h2>
+
+        <!-- Wallet Address Input (Optional) -->
+        <label class="block text-gray-700 text-sm font-semibold mb-2">Your Wallet Address:</label>
+        <input id="wallet-address" type="text" placeholder="Your Solana Wallet" 
+            class="w-full px-4 py-3 border border-red-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+
+        <!-- Donation Amount Input -->
+        <label class="block text-gray-700 text-sm font-semibold mt-4">Amount (SOL):</label>
+        <input id="amount" type="number" step="0.01" placeholder="Enter amount in SOL"
+            class="w-full px-4 py-3 border border-red-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+
+        <!-- Message Input -->
+        <label class="block text-gray-700 text-sm font-semibold mt-4">Message (Optional):</label>
+        <textarea id="message" placeholder="Say something nice..." rows="3"
+            class="w-full px-4 py-3 border border-red-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"></textarea>
+
+        <!-- Connect Wallet Button -->
+        <button type="button" id="connect-wallet"
+            class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg mt-6 transition">
+            Connect Wallet
+        </button>
+
+        <!-- Donate Now Button -->
+        <button type="submit" id="donate-now"
+            class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg mt-4 transition">
+            Donate Now
+        </button>
+    </form>
+
+</body>
+</html>
